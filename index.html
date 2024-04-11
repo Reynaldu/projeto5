@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" >
+
     <title>Menu</title>
 
     <style>
@@ -10,8 +13,16 @@
         body{
             background: black;
         }
-
+        
         h1{
+            background: rgb(146, 144, 144);
+            text-align: center;
+             color: aliceblue;  
+             margin: 0;
+             padding: 0;
+             border-radius:5px;
+        }
+        h2{
         text-align: center;
         color: aliceblue;
         }
@@ -21,17 +32,19 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            padding-left: 30px;
         }
 
         ul li{
-           float: left; 
+            float: left; 
            
         }
 
-        ul a{
+           ul a{
           width: 200px;
           height: 40px;
-          display: block;
+         display: block;
+          padding-left: 20px;
           color: black;
           text-decoration: none;
           text-indent: 40px;
@@ -39,21 +52,18 @@
           background: rgb(225, 220, 230);
           border-radius: 5px;
          
+         
         }
 
         a:hover{
             background: black;
             color: aliceblue;
-        }
-
-        #home .home a, #contato .contato a, #sobre .sobre a, #promocao .promocao a{
-            background: black;
-            color: aliceblue;
+            text-decoration: none;
         }
 
 
         .container{
-            width: 800px;
+            width: 910px;
             height: 300px;
             padding:20px ;
             border: 1px solid #ccc;
@@ -61,7 +71,7 @@
             background-color: rgba(255,255,255,0.3);
             margin:  auto;
             margin-top: 120px;
-            
+       
         }
 
         p{
@@ -69,37 +79,159 @@
             margin-top: 40px;
             color: aliceblue;
         }
+
+     
+        
+
+        @media (max-width:575.98px) {
+           body {
+            background:rgb(0, 0, 0);
+           
+           }
+           
+          .container{
+            width: 400px;
+            height: 400px;
+            margin-bottom: 100px;
+          }
+
+          a{
+            font-size:10px;
+            font-weight: bolder;
+            
+         
+          }
+
+          ul  a{
+            width: 70px;
+            margin: 1px;
+            position: relative;
+            right: 10px;
+            text-indent: -1px;
+            
+          }
+
+          p{
+            font-size: 15px;
+          }
+
+        }
+
+        @media (min-width:576px) and (max-width:767.98px) {
+            body {
+            background:rgb(0, 0, 0);
+           
+           }
+           
+            
+          .container{
+            width: 400px;
+            height: 400px;
+            margin-bottom: 100px;
+          }
+
+          a{
+            font-size:10px;
+            font-weight: bolder;
+            
+         
+          }
+
+          ul  a{
+            width: 70px;
+            margin: 1px;
+            position: relative;
+            right: 10px;
+            text-indent: -1px;
+            
+          }
+
+          p{
+            font-size: 15px;
+          }
+
+           
+        }
+
+        @media (min-width:768px) and (max-width:991.98px) {
+            body {
+            background:rgb(0, 0, 0);
+           
+           }
+
+            
+          .container{
+            width: 400px;
+            height: 400px;
+            margin-bottom: 100px;
+          }
+
+          a{
+            font-size:10px;
+            font-weight: bolder;
+            
+         
+          }
+
+          ul  a{
+            width: 70px;
+            margin: 1px;
+            position: relative;
+            right: 10px;
+            text-indent: -1px;
+            
+          }
+
+          p{
+            font-size: 15px;
+          }
+
+        }
+
+        @media  (min-width:992px) and (max-width:1199.98px) {
+            body {
+            background:rgb(0, 0, 0);
+           
+           }
+
        
+        }
+        
+      
     </style>
 </head>
 <body id="home">
+
+    <header>
+        <h1>PROJETO 5</h1>
+    </header>
      <div class="container">
-         <h1>Menu de Navegação</h1>
+         <h2>Menu de Navegação</h2>
 
            <ul id="navegacao">
                <li class="home">
-                  <a href="index.html">HOME</a>
+                  <a href="#">HOME</a>
                </li>
 
                <li class="contato  ">
-                <a href="contato.html">CONTATO</a>
+                <a href="#">CONTATO</a>
 
                </li>
 
                <li class="sobre">
-                <a href="sobre.html">SOBRE</a>
+                <a href="#">SOBRE</a>
                </li>
 
                <li class="promocao">
-                <a href="promocao.html">PROMOÇÕES</a>
+                <a href="#">PROMOÇÕES</a>
                </li>
 
-           </ul>
+           </ul><br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam sed vero doloremque neque, veritatis praesentium consequuntur fugiat commodi quisquam. Accusantium ea debitis cupiditate temporibus officia aliquam impedit? Sequi, accusantium.
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam sed vero doloremque neque, veritatis praesentium consequuntur fugiat commodi quisquam. Accusantium ea debitis cupiditate temporibus officia aliquam impedit? Sequi, accusantium.</p>
         
         </div>
-
+   
  </body>
    
 </html>
